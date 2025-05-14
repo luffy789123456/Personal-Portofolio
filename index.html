@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <img src=".images/JS.png" alt="Xyxy" width="80" />
+          <div class="info-content">
+            <h2 id="name-container" title="Luffy">
+              <span id="name-text"></span>
+            </h2>
+            <div class="containerP">
+              <p class="title">Web Development</p>
+              <p class="title">Gamer</p>
+              <p class="title">Prompt engineering</p>
+            </div>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:mubaroklutfi32@gmail.com" class="contact-link"
+                  >mubaroklutfi32@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+6285854525409" class="contact-link"
+                  >+62 858-5452-5409</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2006-03-17">17 March 2006</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Kediri, Indonesia</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://api.whatsapp.com/send?phone=6285854525409"
+                class="social-link"
+              >
+                <ion-icon class="socials-icons" name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/luffy_pmdts/"
+                class="social-link"
+              >
+                <ion-icon
+                  class="socials-icons"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Game Fav</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Music Fav</button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              Hello! I’m Lutfi, a passionate programmer with a deep interest in
+              web development. My ultimate goal is to become a reliable and
+              professional programmer who builds impactful digital experiences.
+            </p>
+            <p>
+              I am constantly learning and sharpening my skills to create
+              innovative and effective websites that provide real value to
+              others. The world of programming excites me, and I’m eager to
+              explore deeper, take on new challenges, and contribute to
+              meaningful projects that benefit both myself and the community.
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src=".images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    High quality site development at the Intermediate level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src=".images/icon-app.svg"
+                    alt="Mobile app icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Apps</h4>
+                  <p class="service-item-text">
+                    Simple app development for Android.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src=".images/icon-photo.svg"
+                    alt="Photography icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+                  <p class="service-item-text">
+                    I create high quality photos of any category at an
+                    intermediate level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <img
+                    src="https://vignette.wikia.nocookie.net/shingeki-no-kyojin/images/2/2d/Levi_Ackerman_(Anime).png/revision/latest?cb=20180816051528&path-prefix=es"
+                    alt="Levi Ackerman"
+                  />
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Levi Ackerman
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I am very satisfied with the web design services provided
+                      by this team. Not only do they have incredible creativity
+                      in designing attractive displays, but they also pay
+                      attention to every detail to ensure our website looks
+                      professional and is easy to use. The end result exceeded
+                      our expectations!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <img
+                    src="https://cdna.artstation.com/p/assets/images/images/057/316/054/large/putri-soekidin-db1cd307-6c72-45cd-9ddf-2d5c3b42ff1d.jpg?1671284605"
+                    alt="Gojo Satoru"
+                  />
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Gojo Satoru
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      This web development team is truly amazing! They not only
+                      understood our technical needs well, but also delivered
+                      them very efficiently. The development process went
+                      smoothly, communication was always open, and the end
+                      result was a functional and responsive website. We highly
+                      recommend their services to anyone needing quality web
+                      development.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <img
+                    src="https://i.pinimg.com/originals/26/07/08/2607088af561811deeb3f9cceff5a696.jpg"
+                    alt="Rem"
+                  />
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Rem
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Our experience with this mobile app development team has
+                      been great! They are very dedicated to providing solutions
+                      that suit our business needs. From user interface design
+                      to final testing, everything was done very professionally.
+                      We are very pleased with the results and believe that our
+                      mobile app will be a valuable tool for our customers.
+                      Thank you for your hard work.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <img
+                    src="https://comicvine.gamespot.com/a/uploads/scale_super/11160/111605805/8687496-monkey_d__luffy__gear_5____updated_by_b_a_i_o_r_e_t_t_o_df3gezw-fullview.png"
+                    alt="Luffy"
+                  />
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Luffy
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I couldn't be happier with the photography results this
+                      photographer provided! They not only have extraordinary
+                      technical skills in taking pictures, but also have
+                      extraordinary artistic talent in capturing beautiful
+                      moments. From shooting to editing, everything was done
+                      very professionally. I highly recommend their photography
+                      services to anyone looking for exceptional results!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <img src=".images/icon-quote.svg" alt="quote icon" />
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Pikaa</h4>
+                <time datetime="2024-03-25">25 Maret, 2024</time>
+                <div data-modal-text>
+                  <p>
+                    I am very satisfied with the web design services provided by
+                    this team. Not only do they have incredible creativity in
+                    designing attractive displays, but they also pay attention
+                    to every detail to ensure our website looks professional and
+                    is easy to use. The end result exceeded our expectations!
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">MTS Sunan Kalijaga</h4>
+                <span>2019 — 2022</span>
+                <p class="timeline-text">
+                  Selama menempuh pendidikan di MTS Sunan Kalijaga, saya
+                  mendapatkan dasar yang kuat dalam berbagai mata pelajaran
+                  serta mengembangkan keterampilan berpikir kritis dan
+                  problem-solving. Saya juga aktif dalam berbagai kegiatan
+                  sekolah yang membantu meningkatkan keterampilan komunikasi dan
+                  kerja sama tim.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">SMKN 1 Kras</h4>
+                <span>2022 — 2025</span>
+                <p class="timeline-text">
+                  Di SMKN 1 Kras, saya mengambil jurusan Teknik Komputer dan
+                  Jaringan, di mana saya belajar tentang dasar-dasar
+                  pemrograman, jaringan komputer, dan administrasi sistem
+                  jaringan. Selain itu, saya juga aktif dalam berbagai kegiatan
+                  ekstrakurikuler dan kegiatan OSIS yang membantu saya
+                  mengembangkan keterampilan kepemimpinan dan kerja sama tim.
+                </p>
+              </li>
+            </ol>
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">PKL di Optimus IT Center</h4>
+                <span>July 2024 — Oktober 2024</span>
+                <p class="timeline-text">
+                  Selama PKL, saya belajar dan menerapkan ilmu komputer dan
+                  jaringan dalam dunia kerja, seperti pemasangan WIFI,
+                  pemasangan Router, serta perakitan dan pemasangan Running
+                  Text.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title" style="margin-top: 20px">
+                  Osis Bidang Kreatifitas - SMKN 1 Kras
+                </h4>
+                <span>July 2024 — Oktober 2024</span>
+                <p class="timeline-text">
+                  Sebagai anggota OSIS bidang Kreatifitas, saya memiliki
+                  tanggung jawab dalam memberi masukan dan menyukseskan acara
+                  yang akan diselenggarakan di sekolah. Saya juga ikut serta
+                  dalam mengoordinasikan rundown berjalannya acara.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Skill</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Pemrograman</h4>
+                <span>2025 — Now</span>
+                <p class="timeline-text">
+                  Saya memiliki pemahaman dalam pengembangan web, khususnya
+                  menggunakan HTML, CSS, dan JavaScript. Selain itu, saya terus
+                  belajar dan mengembangkan keterampilan dalam berbagai
+                  teknologi lain, seperti PHP untuk memahami tentang back end,
+                  React.js untuk membangun aplikasi web yang interaktif dan
+                  dinamis, serta Bootstrap dan Tailwind CSS untuk mempercepat
+                  proses desain dan menciptakan tampilan website yang responsif
+                  dan modern.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Teknik Komputer</h4>
+                <span>2022 — Now</span>
+                <p class="timeline-text">
+                  Saya memiliki keterampilan dalam pembuatan administrasi sistem
+                  jaringan komputer, termasuk pemasangan dan konfigurasi router,
+                  serta troubleshooting. Saya juga memiliki sedikit pemahaman
+                  tentang microcontroler terutama esp32 dan arduino.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="30">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Mobile Apps</h5>
+                  <data value="20">20%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Jaringan</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Applications</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://luffy789123456.github.io/pizzaSlide/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src=".images/Project 1.png"
+                      alt="Website Personal Portfolio"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Pizza Singular Slide</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://luffy789123456.github.io/learnSpline/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src=".images/Project 2.png"
+                      alt="Rexustore"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">3D Website</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://682426286609960e1d1ef7e4--musiclyric-123.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src=".images/Project 3.png"
+                      alt="Personal Branding"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Music Lyrics</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Web Applications"
+              >
+                <a href="https://luffy789123456.github.io/Weather-v1/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src=".images/Project 4.png"
+                      alt="Crypto Trading View"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Weather-V1</h3>
+                  <p class="project-category">Web applications</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="games" data-page="game fav">
+          <header>
+            <h2 class="h2 article-title">Game Fav</h2>
+          </header>
+          <section class="blog-posts game-container">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item game-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="https://egamersworld.com/cdn-cgi/image/width=690,quality=75,format=webp/uploads/blog/m/mt/mtcg0cyb-z_1708348800202.webp"
+                      alt="Assassins Creed Black Flag"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content game-item">
+                    <div class="blog-meta">
+                      <p class="blog-category">Game Favorit</p>
+                      <span class="dot"></span>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Mobile Legends: Bang Bang
+                    </h3>
+                    <p class="blog-text">
+                      Game MOBA yang melatih strategi dan kerja sama team untuk mencapai kemenangan.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <div class="music-container">
+          <article class="games" data-page="music fav">
+            <header>
+              <h2 class="h2 article-title">Music Fav</h2>
+            </header>
+            <section class="music-favorites">
+              <h2 class="section-title">Playlist Music Favorit</h2>
+              <div class="music-list">
+                <div class="music-item" onclick="togglePlay(this)">
+                  <figure class="music-banner-box">
+                    <img
+                      src="https://asset-2.tstatic.net/gorontalo/foto/bank/images/Lirik-lagu-Lesung-Pipi.jpg"
+                      alt="Raim Laode - Lesung Pipi"
+                      loading="lazy"
+                    />
+                    <div class="play-overlay">▶</div>
+                  </figure>
+                  <div class="music-content">
+                    <h3 class="music-title">Lesung Pipi</h3>
+                    <p class="music-artist">Raim Laode</p>
+                    <p class="music-album"></p>
+                    <p class="music-duration">3:44</p>
+                    <audio
+                      class="music-audio"
+                      src="audio/Raim Laode - Lesung Pipi (Lirik).mp3"
+                      ontimeupdate="updateProgress(this)"
+                    ></audio>
+                    <div class="progress-container">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="music-item" onclick="togglePlay(this)">
+                  <figure class="music-banner-box">
+                    <img
+                      src="https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b0/6e/e3/b06ee3e2-c0f7-95d2-231b-b8af06f79d7c/1968710647810101.jpg/1200x630mv.jpg"
+                      alt="Libianca - People"
+                      loading="lazy"
+                    />
+                    <div class="play-overlay">▶</div>
+                  </figure>
+                  <div class="music-content">
+                    <h3 class="music-title">People</h3>
+                    <p class="music-artist">Libianca</p>
+                    <p class="music-album"></p>
+                    <p class="music-duration">3:01</p>
+                    <audio
+                      class="music-audio"
+                      src="audio/Libianca - People (Official Visualiser) ft. Ayra Starr Omah Lay.mp3"
+                      ontimeupdate="updateProgress(this)"
+                    ></audio>
+                    <div class="progress-container">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="music-item" onclick="togglePlay(this)">
+                  <figure class="music-banner-box">
+                    <img
+                      src="https://imgx.sonora.id/crop/0x0:0x0/x/photo/2020/12/24/2415278177.jpg"
+                      alt="Wiz Khalifa - See You Again"
+                      loading="lazy"
+                    />
+                    <div class="play-overlay">▶</div>
+                  </figure>
+                  <div class="music-content">
+                    <h3 class="music-title">See You Again</h3>
+                    <p class="music-artist">Wiz Khalifa</p>
+                    <p class="music-album"></p>
+                    <p class="music-duration">3:57</p>
+                    <audio
+                      class="music-audio"
+                      src="audio/Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3"
+                      ontimeupdate="updateProgress(this)"
+                    ></audio>
+                    <div class="progress-container">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="music-item" onclick="togglePlay(this)">
+                  <figure class="music-banner-box">
+                    <img
+                      src="https://asset-2.tstatic.net/wow/foto/bank/images/sampul-lagu-surat-cinta-untuk-starla-oleh-virgoun.jpg"
+                      alt="Virgoun - Surat Cinta Untuk Starla"
+                      loading="lazy"
+                    />
+                    <div class="play-overlay">▶</div>
+                  </figure>
+                  <div class="music-content">
+                    <h3 class="music-title">Surat Cinta Untuk Starla</h3>
+                    <p class="music-artist">Virgoun</p>
+                    <p class="music-album"></p>
+                    <p class="music-duration">4:51</p>
+                    <audio
+                      class="music-audio"
+                      src="audio/Surat Cinta Untuk Starla - Virgoun ⎮⎮ [ Slowed Reverb ] ⎋ Lyrics ✓.mp3"
+                      ontimeupdate="updateProgress(this)"
+                    ></audio>
+                    <div class="progress-container">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
